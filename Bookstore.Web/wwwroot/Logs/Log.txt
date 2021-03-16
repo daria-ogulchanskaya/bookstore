@@ -1,0 +1,560 @@
+﻿[24.02.2021 8:00:46]:
+Exception message: Object reference not set to an instance of an object.\r\n
+--------------------------------------------------\n
+Exception stacktrace:    at Bookstore.Web.Controllers.AccountController.SignOutAsync() in C:\Users\Anuitex\source\repos\ohulchanska_d\Bookstore.Web\Controllers\AccountController.cs:line 36
+   at lambda_method354(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Bookstore.Web.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Anuitex\source\repos\ohulchanska_d\Bookstore.Web\Middleware\ExceptionMiddleware.cs:line 26\r
+Message: 
+--------------------------------------------------
+==================================================
+
+
+[01.03.2021 10:20:57]:
+Exception message: The client has disconnected\r\n
+--------------------------------------------------\n
+Exception stacktrace:    at Microsoft.AspNetCore.Server.IIS.Core.IO.AsyncIOOperation.GetResult(Int16 token)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.ReadBody()
+   at System.IO.Pipelines.PipeCompletion.ThrowLatchedException()
+   at System.IO.Pipelines.Pipe.GetReadResult(ReadResult& result)
+   at System.IO.Pipelines.Pipe.ReadAsync(CancellationToken token)
+   at System.IO.Pipelines.Pipe.DefaultPipeReader.ReadAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.ReadAsync(Memory`1 memory, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.IIS.Core.HttpRequestStream.ReadAsyncInternal(Memory`1 buffer, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.WebUtilities.FileBufferingReadStream.ReadAsync(Memory`1 buffer, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.WebUtilities.StreamHelperExtensions.DrainAsync(Stream stream, ArrayPool`1 bytePool, Nullable`1 limit, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter.ReadRequestBodyAsync(InputFormatterContext context, Encoding encoding)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder.BindModelAsync(ModelBindingContext bindingContext)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Bookstore.Web.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Anuitex\source\repos\ohulchanska_d\Bookstore.Web\Middleware\ExceptionMiddleware.cs:line 26\r
+--------------------------------------------------\n
+Inner exception message: Попытка выполнить операцию для несуществующего сетевого подключения. (0x800704CD)\r\n--------------------------------------------------\n
+Inner exception stacktrace: \r\n
+--------------------------------------------------
+Message: 
+--------------------------------------------------
+==================================================
+
+
+[3/5/2021 8:20:20 AM]:
+Exception message: One or more errors occurred. (One or more errors occurred. (The npm script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: Node.js version v11.0.0 detected.
+
+The Angular CLI requires a minimum Node.js version of either v10.13 or v12.0.
+
+
+
+Please update your Node.js version or visit https://nodejs.org/ for additional instructions.
+
+
+
+npm ERR! code ELIFECYCLE
+
+npm ERR! errno 3
+
+npm ERR! bookshop@0.0.0 start: `ng serve "--port" "50158"`
+
+npm ERR! Exit status 3
+
+npm ERR! 
+
+npm ERR! Failed at the bookshop@0.0.0 start script.
+
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+
+
+npm ERR! A complete log of this run can be found in:
+
+))\r\n
+--------------------------------------------------\n
+Exception stacktrace:    at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at Microsoft.AspNetCore.SpaServices.Extensions.Util.TaskTimeoutExtensions.WithTimeout[T](Task`1 task, TimeSpan timeoutDelay, String message)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Bookstore.Web.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Banana\source\repos\ohulchanska_d\Bookstore.Web\Middleware\ExceptionMiddleware.cs:line 26\r
+--------------------------------------------------\n
+Inner exception message: One or more errors occurred. (The npm script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: Node.js version v11.0.0 detected.
+
+The Angular CLI requires a minimum Node.js version of either v10.13 or v12.0.
+
+
+
+Please update your Node.js version or visit https://nodejs.org/ for additional instructions.
+
+
+
+npm ERR! code ELIFECYCLE
+
+npm ERR! errno 3
+
+npm ERR! bookshop@0.0.0 start: `ng serve "--port" "50158"`
+
+npm ERR! Exit status 3
+
+npm ERR! 
+
+npm ERR! Failed at the bookshop@0.0.0 start script.
+
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+
+
+npm ERR! A complete log of this run can be found in:
+
+)\r\n--------------------------------------------------\n
+Inner exception stacktrace:    at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<>c.<Attach>b__2_0(Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)\r\n
+--------------------------------------------------
+Message: 
+--------------------------------------------------
+==================================================
+
+
+[3/5/2021 9:45:40 AM]:
+Exception message: One or more errors occurred. (One or more errors occurred. (The npm script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: Node.js version v11.0.0 detected.
+
+The Angular CLI requires a minimum Node.js version of either v10.13 or v12.0.
+
+
+
+Please update your Node.js version or visit https://nodejs.org/ for additional instructions.
+
+
+
+npm ERR! code ELIFECYCLE
+
+npm ERR! errno 3
+
+npm ERR! bookshop@0.0.0 start: `ng serve "--port" "50765"`
+
+npm ERR! Exit status 3
+
+npm ERR! 
+
+npm ERR! Failed at the bookshop@0.0.0 start script.
+
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+
+
+npm ERR! A complete log of this run can be found in:
+
+npm ERR!     C:\Users\Banana\AppData\Roaming\npm-cache\_logs\2021-03-05T09_45_39_836Z-debug.log
+
+))\r\n
+--------------------------------------------------\n
+Exception stacktrace:    at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at Microsoft.AspNetCore.SpaServices.Extensions.Util.TaskTimeoutExtensions.WithTimeout[T](Task`1 task, TimeSpan timeoutDelay, String message)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Bookstore.Web.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Banana\source\repos\ohulchanska_d\Bookstore.Web\Middleware\ExceptionMiddleware.cs:line 26\r
+--------------------------------------------------\n
+Inner exception message: One or more errors occurred. (The npm script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: Node.js version v11.0.0 detected.
+
+The Angular CLI requires a minimum Node.js version of either v10.13 or v12.0.
+
+
+
+Please update your Node.js version or visit https://nodejs.org/ for additional instructions.
+
+
+
+npm ERR! code ELIFECYCLE
+
+npm ERR! errno 3
+
+npm ERR! bookshop@0.0.0 start: `ng serve "--port" "50765"`
+
+npm ERR! Exit status 3
+
+npm ERR! 
+
+npm ERR! Failed at the bookshop@0.0.0 start script.
+
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+
+
+npm ERR! A complete log of this run can be found in:
+
+npm ERR!     C:\Users\Banana\AppData\Roaming\npm-cache\_logs\2021-03-05T09_45_39_836Z-debug.log
+
+)\r\n--------------------------------------------------\n
+Inner exception stacktrace:    at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<>c.<Attach>b__2_0(Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)\r\n
+--------------------------------------------------
+Message: 
+--------------------------------------------------
+==================================================
+
+
+[3/5/2021 9:47:27 AM]:
+Exception message: One or more errors occurred. (One or more errors occurred. (The npm script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: Node.js version v11.0.0 detected.
+
+The Angular CLI requires a minimum Node.js version of either v10.13 or v12.0.
+
+
+
+Please update your Node.js version or visit https://nodejs.org/ for additional instructions.
+
+
+
+npm ERR! code ELIFECYCLE
+
+npm ERR! errno 3
+
+npm ERR! bookshop@0.0.0 start: `ng serve "--port" "50765"`
+
+npm ERR! Exit status 3
+
+npm ERR! 
+
+npm ERR! Failed at the bookshop@0.0.0 start script.
+
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+
+
+npm ERR! A complete log of this run can be found in:
+
+npm ERR!     C:\Users\Banana\AppData\Roaming\npm-cache\_logs\2021-03-05T09_45_39_836Z-debug.log
+
+))\r\n
+--------------------------------------------------\n
+Exception stacktrace:    at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at Microsoft.AspNetCore.SpaServices.Extensions.Util.TaskTimeoutExtensions.WithTimeout[T](Task`1 task, TimeSpan timeoutDelay, String message)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Bookstore.Web.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Banana\source\repos\ohulchanska_d\Bookstore.Web\Middleware\ExceptionMiddleware.cs:line 26\r
+--------------------------------------------------\n
+Inner exception message: One or more errors occurred. (The npm script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: Node.js version v11.0.0 detected.
+
+The Angular CLI requires a minimum Node.js version of either v10.13 or v12.0.
+
+
+
+Please update your Node.js version or visit https://nodejs.org/ for additional instructions.
+
+
+
+npm ERR! code ELIFECYCLE
+
+npm ERR! errno 3
+
+npm ERR! bookshop@0.0.0 start: `ng serve "--port" "50765"`
+
+npm ERR! Exit status 3
+
+npm ERR! 
+
+npm ERR! Failed at the bookshop@0.0.0 start script.
+
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+
+
+npm ERR! A complete log of this run can be found in:
+
+npm ERR!     C:\Users\Banana\AppData\Roaming\npm-cache\_logs\2021-03-05T09_45_39_836Z-debug.log
+
+)\r\n--------------------------------------------------\n
+Inner exception stacktrace:    at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<>c.<Attach>b__2_0(Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)\r\n
+--------------------------------------------------
+Message: 
+--------------------------------------------------
+==================================================
+
+
+[3/5/2021 9:47:53 AM]:
+Exception message: One or more errors occurred. (One or more errors occurred. (The npm script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: Node.js version v11.0.0 detected.
+
+The Angular CLI requires a minimum Node.js version of either v10.13 or v12.0.
+
+
+
+Please update your Node.js version or visit https://nodejs.org/ for additional instructions.
+
+
+
+npm ERR! code ELIFECYCLE
+
+npm ERR! errno 3
+
+npm ERR! bookshop@0.0.0 start: `ng serve "--port" "50765"`
+
+npm ERR! Exit status 3
+
+npm ERR! 
+
+npm ERR! Failed at the bookshop@0.0.0 start script.
+
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+
+
+npm ERR! A complete log of this run can be found in:
+
+npm ERR!     C:\Users\Banana\AppData\Roaming\npm-cache\_logs\2021-03-05T09_45_39_836Z-debug.log
+
+))\r\n
+--------------------------------------------------\n
+Exception stacktrace:    at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at Microsoft.AspNetCore.SpaServices.Extensions.Util.TaskTimeoutExtensions.WithTimeout[T](Task`1 task, TimeSpan timeoutDelay, String message)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Bookstore.Web.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Banana\source\repos\ohulchanska_d\Bookstore.Web\Middleware\ExceptionMiddleware.cs:line 26\r
+--------------------------------------------------\n
+Inner exception message: One or more errors occurred. (The npm script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: Node.js version v11.0.0 detected.
+
+The Angular CLI requires a minimum Node.js version of either v10.13 or v12.0.
+
+
+
+Please update your Node.js version or visit https://nodejs.org/ for additional instructions.
+
+
+
+npm ERR! code ELIFECYCLE
+
+npm ERR! errno 3
+
+npm ERR! bookshop@0.0.0 start: `ng serve "--port" "50765"`
+
+npm ERR! Exit status 3
+
+npm ERR! 
+
+npm ERR! Failed at the bookshop@0.0.0 start script.
+
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+
+
+npm ERR! A complete log of this run can be found in:
+
+npm ERR!     C:\Users\Banana\AppData\Roaming\npm-cache\_logs\2021-03-05T09_45_39_836Z-debug.log
+
+)\r\n--------------------------------------------------\n
+Inner exception stacktrace:    at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<>c.<Attach>b__2_0(Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)\r\n
+--------------------------------------------------
+Message: 
+--------------------------------------------------
+==================================================
+
+
+[3/5/2021 11:35:09 AM]:
+Exception message: One or more errors occurred. (One or more errors occurred. (The npm script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: Node.js version v11.0.0 detected.
+
+The Angular CLI requires a minimum Node.js version of either v10.13 or v12.0.
+
+
+
+Please update your Node.js version or visit https://nodejs.org/ for additional instructions.
+
+
+
+npm ERR! code ELIFECYCLE
+
+npm ERR! errno 3
+
+npm ERR! bookshop@0.0.0 start: `ng serve "--port" "51414"`
+
+npm ERR! Exit status 3
+
+npm ERR! 
+
+npm ERR! Failed at the bookshop@0.0.0 start script.
+
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+
+
+npm ERR! A complete log of this run can be found in:
+
+npm ERR!     C:\Users\Banana\AppData\Roaming\npm-cache\_logs\2021-03-05T11_35_08_944Z-debug.log
+
+))\r\n
+--------------------------------------------------\n
+Exception stacktrace:    at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at Microsoft.AspNetCore.SpaServices.Extensions.Util.TaskTimeoutExtensions.WithTimeout[T](Task`1 task, TimeSpan timeoutDelay, String message)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Bookstore.Web.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Banana\source\repos\ohulchanska_d\Bookstore.Web\Middleware\ExceptionMiddleware.cs:line 26\r
+--------------------------------------------------\n
+Inner exception message: One or more errors occurred. (The npm script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: Node.js version v11.0.0 detected.
+
+The Angular CLI requires a minimum Node.js version of either v10.13 or v12.0.
+
+
+
+Please update your Node.js version or visit https://nodejs.org/ for additional instructions.
+
+
+
+npm ERR! code ELIFECYCLE
+
+npm ERR! errno 3
+
+npm ERR! bookshop@0.0.0 start: `ng serve "--port" "51414"`
+
+npm ERR! Exit status 3
+
+npm ERR! 
+
+npm ERR! Failed at the bookshop@0.0.0 start script.
+
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+
+
+npm ERR! A complete log of this run can be found in:
+
+npm ERR!     C:\Users\Banana\AppData\Roaming\npm-cache\_logs\2021-03-05T11_35_08_944Z-debug.log
+
+)\r\n--------------------------------------------------\n
+Inner exception stacktrace:    at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<>c.<Attach>b__2_0(Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)\r\n
+--------------------------------------------------
+Message: 
+--------------------------------------------------
+==================================================
+
+
+[3/9/2021 8:31:27 AM]:
+Exception message: One or more errors occurred. (The remote party closed the WebSocket connection without completing the close handshake.)\r\n
+--------------------------------------------------\n
+Exception stacktrace:    at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PumpWebSocket(WebSocket source, WebSocket destination, Int32 bufferSize, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.AcceptProxyWebSocketRequest(HttpContext context, Uri destinationUri, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Bookstore.Web.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Banana\source\repos\ohulchanska_d\Bookstore.Web\Middleware\ExceptionMiddleware.cs:line 26\r
+--------------------------------------------------\n
+Inner exception message: The remote party closed the WebSocket connection without completing the close handshake.\r\n--------------------------------------------------\n
+Inner exception stacktrace:    at System.Net.WebSockets.ManagedWebSocket.ReceiveAsyncPrivate[TWebSocketReceiveResultGetter,TWebSocketReceiveResult](Memory`1 payloadBuffer, CancellationToken cancellationToken, TWebSocketReceiveResultGetter resultGetter)\r\n
+--------------------------------------------------
+Message: 
+--------------------------------------------------
+==================================================
+
+
+[3/10/2021 7:04:56 AM]:
+Exception message: The Angular CLI process did not start listening for requests within the timeout period of 120 seconds. Check the log output for error information.\r\n
+--------------------------------------------------\n
+Exception stacktrace:    at Microsoft.AspNetCore.SpaServices.Extensions.Util.TaskTimeoutExtensions.WithTimeout[T](Task`1 task, TimeSpan timeoutDelay, String message)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Bookstore.Web.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Banana\source\repos\ohulchanska_d\Bookstore.Web\Middleware\ExceptionMiddleware.cs:line 26\r
+Message: 
+--------------------------------------------------
+==================================================
+
+

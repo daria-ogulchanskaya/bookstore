@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+  <PackageReference Include="AutoMapper" Version="10.1.1" />
+  <PackageReference Include="AutoMapper.Extensions.EnumMapping" Version="1.0.0" />
+  <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+  <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.3" />
+  <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.1" />
+  <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
+  <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="5.0.0" />
+  <PackageReference Include="Scrutor" Version="3.3.0" />
+  <PackageReference Include="Stripe.net" Version="39.36.0" />
+  <PackageReference Include="System.Linq.Dynamic.Core" Version="1.2.8" />
+  <PackageReference Include="X.PagedList" Version="8.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Bookstore.Data\Bookstore.Data.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,53 @@
+<div class="table-name">
+  <h1>My orders</h1>
+</div>
+
+<div class="orders-header">
+  <div class="col-md-2">No.</div>
+  <div class="col-md-2">Date</div>
+  <div class="col-md-2">Client Name</div>
+  <div class="col-md-2">Total Cost</div>
+  <div class="col-md-2">Order Status</div>
+</div>
+
+<mat-expansion-panel *ngFor="let item of orders; let i = index;"
+                     (opened)="open(i)"
+                     (closed)="close(i)">
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      <div class="order-row"> 
+        <div class="col-md-2"> {{ i + 1}} </div>
+        <div class="col-md-2"> {{ item.creationDate | date }}</div>
+        <div class="col-md-2"> {{ item.user.name }} {{ item.user.surname }}</div>
+        <div class="col-md-2"> ${{ item.totalCost | number : roundTo }}</div>
+        <div class="col-md-2 status">
+          <div *ngIf="item.status === unpaid">
+            <button mat-raised-button (click)="payOrder(item.id)">
+              <mat-icon>credit_card</mat-icon> Pay
+            </button>
+          </div>
+          <div *ngIf="item.status === paid">{{ item.status | status }}</div>
+        </div>
+      </div>
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+
+      <div class="item-header">
+        <div class="col-md-3">Title</div>
+        <div class="col-md-3">Product Type</div>
+        <div class="col-md-3">Count</div>
+        <div class="col-md-3">Item Price</div>
+      </div>
+      <hr color="#ccc">
+
+      <div *ngFor="let product of item.items">
+        <div class="item-row">
+          <div class="col-md-3">{{ product.printingEdition.title }}</div>
+          <div class="col-md-3">{{ product.printingEdition.type | edition }}</div>
+          <div class="col-md-3">{{ product.count }}</div>
+          <div class="col-md-3">${{ product.printingEdition.price | number : roundTo }}</div>
+        </div>
+        <hr color="#ccc">
+      </div>
+
+</mat-expansion-panel>

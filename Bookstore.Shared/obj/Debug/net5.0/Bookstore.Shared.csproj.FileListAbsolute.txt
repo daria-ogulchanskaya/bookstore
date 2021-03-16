@@ -1,0 +1,12 @@
+C:\Users\Anuitex\source\repos\ohulchanska_d\Bookstore.Shared\bin\Debug\net5.0\Bookstore.Shared.deps.json
+C:\Users\Anuitex\source\repos\ohulchanska_d\Bookstore.Shared\bin\Debug\net5.0\Bookstore.Shared.dll
+C:\Users\Anuitex\source\repos\ohulchanska_d\Bookstore.Shared\bin\Debug\net5.0\ref\Bookstore.Shared.dll
+C:\Users\Anuitex\source\repos\ohulchanska_d\Bookstore.Shared\bin\Debug\net5.0\Bookstore.Shared.pdb
+C:\Users\Anuitex\source\repos\ohulchanska_d\Bookstore.Shared\obj\Debug\net5.0\Bookstore.Shared.csprojAssemblyReference.cache
+C:\Users\Anuitex\source\repos\ohulchanska_d\Bookstore.Shared\obj\Debug\net5.0\Bookstore.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Anuitex\source\repos\ohulchanska_d\Bookstore.Shared\obj\Debug\net5.0\Bookstore.Shared.AssemblyInfoInputs.cache
+C:\Users\Anuitex\source\repos\ohulchanska_d\Bookstore.Shared\obj\Debug\net5.0\Bookstore.Shared.AssemblyInfo.cs
+C:\Users\Anuitex\source\repos\ohulchanska_d\Bookstore.Shared\obj\Debug\net5.0\Bookstore.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Anuitex\source\repos\ohulchanska_d\Bookstore.Shared\obj\Debug\net5.0\Bookstore.Shared.dll
+C:\Users\Anuitex\source\repos\ohulchanska_d\Bookstore.Shared\obj\Debug\net5.0\ref\Bookstore.Shared.dll
+C:\Users\Anuitex\source\repos\ohulchanska_d\Bookstore.Shared\obj\Debug\net5.0\Bookstore.Shared.pdb

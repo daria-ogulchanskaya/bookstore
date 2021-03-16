@@ -1,0 +1,48 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <img src="assets/images/default.png">
+    </div>
+    <div class="col-md-7">
+      <h1>{{ printingEdition?.title }}</h1>
+
+      <div class="authors">
+        <p>By</p>&nbsp;
+        <div *ngFor="let author of printingEdition?.authors">
+          {{ author.author.name }}{{ printingEdition?.authors.length > 1 && printingEdition?.authors.indexOf(author) + 1 < printingEdition?.authors.length ? ',' : '' }}
+          &nbsp;
+        </div>
+      </div>
+      <br>
+     
+      <div class="price-container">
+        <b class="price">{{ printingEdition?.price | number : roundTo }} {{ printingEdition?.currency | currency }}</b> 
+      </div>
+      <div class="add-to-cart-container">
+        <mat-form-field>
+          <mat-label>Quantity</mat-label>
+          <input [(ngModel)]="quantity" matInput type="number" value="1" min="1" height="40px" width="30px">
+        </mat-form-field>
+
+        <div *ngIf="isLoggedIn && !isAdmin" class="add-to-cart">
+          <button mat-raised-button [disabled]="quantity <= 0" (click)="addProduct()">
+            <mat-icon> add_shopping_cart </mat-icon> 
+            Add to Cart
+          </button>
+        </div>
+
+        <div *ngIf="!isLoggedIn" class="info-text">
+          <br>
+          <h2>To buy a product, you need to sign in.</h2>
+        </div>
+      </div>
+
+      <div class="description">
+        <h2>Description</h2>
+        <p> {{ printingEdition?.description }} </p>
+      </div>
+
+    </div>
+  </div>
+
+</div>

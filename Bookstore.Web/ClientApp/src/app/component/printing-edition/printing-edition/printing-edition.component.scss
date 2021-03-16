@@ -1,0 +1,62 @@
+  .price {
+      font-size: 26px;
+      font-weight: bold;
+      color: #5c5c5c;
+      margin-left: auto;
+      margin-right: 20px;
+      font-family:'Font Awesome 5 Free';
+   }
+
+  .description {
+    margin-top: 40px;
+  }
+
+  .container {
+    margin-top: 100px;
+  }
+
+  .mat-raised-button {
+    background-color: black;
+    color: white;
+    margin-left: auto;
+    margin-right: 20px;
+   }
+
+  h1 {
+    font-family:'Font Awesome 5 Free';
+    font-size: 40px;
+  }
+
+  .authors {
+    display: flex;
+    font-family:'Font Awesome 5 Free';
+    font-weight: bold;
+    font-size: 18px;
+    color: dimgray;
+  }
+
+  .info-text {
+    font-family:'Font Awesome 5 Free' !important;
+    margin-left: auto;
+  }
+
+  .add-to-cart-container {
+    border: 1px solid #ddd;
+    padding: 10px 10px 10px 30px;
+    display: flex;
+    height: 120px;
+    align-items: center;
+  }
+
+  .add-to-cart {
+    margin-left: auto;
+  }
+
+  .price-container {
+    border: 1px solid #ddd;
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    height: 80px;
+    align-items: center;
+    border-bottom: none;
+  }
